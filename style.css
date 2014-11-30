@@ -1,0 +1,47 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 90px;
+    padding-bottom: 20px;
+}
+.gift {
+    border: solid 1px #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    position: relative;
+    margin-top: 50px;
+}
+.gift .image {
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gift .name {
+    text-align: center;
+    font-weight: bold;
+}
+.desc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    height: 100%;
+    display: none;
+    width: 100%;
+}
+.gift:hover .desc { 
+    display:block;
+}
+#logo {
+    max-width: 280px;    
+}
+.template {
+    display:none;
+}
+.shares {
+    margin:0 auto;
+}
